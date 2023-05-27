@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main{
+    margin-top: 40px;
+}
+.main_container{
+    border: 1px solid rgba(207, 195, 195, 0.904);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+.input_field{
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.calculation_info{
+    text-align: right;
+    font-family:'Courier New';
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+.calculation_info #operator_info{
+    margin-right: 50px;
+}
+.input_field input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+.input_field input[type='text']{
+    font-size: 2rem;
+    height: 4rem;
+    border: 1px solid rgba(207, 195, 195, 0.904);
+    border-radius: 10px;
+    outline: none;
+    text-align: right;
+    font-family:'Courier New';
+    font-weight: 550;
+    box-shadow:1px 1px 1px 0px #c5c9ce;
+}
+
+.numbers_content{
+    display: grid;
+    grid-template-columns: repeat(5,90px);
+    padding: 10px;
+    border: 1px solid rgba(207, 195, 195, 0.904);
+    border-radius: 15px;
+}
+.numbers_content input[type='button']{
+    font-size: 1.5rem;
+    font-family:'Courier New';
+    font-weight: 550;
+    margin: 3px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: 1s;
+    box-shadow:1px 2px 2px 1px #c5c9ce;
+
+}
+.numbers_content input[type='button']:hover{
+    background-color: rgba(207, 195, 195, 0.904);
+    border: none;
+    transition: 1s;
+}
+.footer{
+    margin: 10px;
+    padding-top: 5px;
+}
+/* ===== responsiveness==== */
+@media (max-width:425px) {
+ 
+    .main_container{
+      border: none;
+    }
+    .numbers_content input[type='button']{
+        font-size: 2.3rem;
+    }
+    .footer{
+        margin-top: 60px;
+    }
+
+}
+@media (max-width:375px) {
+ 
+    .footer{
+        margin-top: 100px;
+    }
+    
+
+}
